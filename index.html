@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/bootstrap.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap</title>
+    <style>
+        .top{
+            height: 40px;
+            line-height: 39px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .top .container .row >div+div{
+            border-left: 1px solid #e0e0e0;
+        }
+
+        .top-1{
+            position: relative;
+        }
+
+        .top-1 img{
+            position: absolute;
+            left: 50%;
+           transform: translateX(-50%);
+            top:20px;
+            display: none;
+            z-index: 1;
+        }
+
+        .top-1:hover img{
+            display: block;
+        }
+
+        nav > .container > .navbar-brand{
+
+
+        }
+
+        nav > .container >.navbar-collapse> ul{
+            margin-left: 50px;
+        }
+        nav > .container >.navbar-collapse> ul li{
+            margin-right: 50px;
+        }
+
+        nav > .container >.navbar-collapse> ul li a:hover{
+            border-bottom: 2px solid purple;
+        }
+
+        #carouselExampleIndicators .carousel-item{
+            background: no-repeat center center;
+            background-size: cover;
+        }
+
+        #carouselExampleIndicators .carousel-item img{
+            width: 100%;
+        }
+        @media screen and  (min-width:900px){
+            #carouselExampleIndicators .carousel-item{
+                height: 410px;
+            }
+        }
+
+        .media{
+            margin-top: 5px;
+            background-color: #f0f0f0;
+            color: #bce8f1;
+        }
+
+        #myTab{
+            margin-left: 75px;
+            margin-right: 75px;
+            margin-top: 50px;
+        }
+        #myTab li{
+            margin-right: 24px;
+        }
+
+        footer li{
+            list-style: none;
+        }
+        footer li a{
+            color: white;
+        }
+        footer{
+            padding: 30px 0;
+            background-color: #b8daff;
+        }
+
+
+        footer ul:nth-child(1){
+            float: left;
+
+        }
+        footer ul:nth-child(2){
+            float: right;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="top d-none d-sm-none d-md-none d-lg-block text-center text-muted">
+  <div class="container" >
+    <div class="row">
+        <div class="col-md-2"><a href="#" class="top-1 text-muted">关注微信号<img src="img/二维码.png" alt="" width="80px"></a></div>
+        <div class="col-md-5"><a href="" class="text-muted">188-8888-8888 (服务时间:  9:00-21:00)</a></div>
+        <div class="col-md-2"><a href="" class="text-muted">校企合作</a> <a href="" class="text-muted">培训师</a></div>
+        <div class="col-md-3"><a class="btn btn-sm btn-success text-light">免费注册</a> <a href="" class="text-muted">立即登录</a></div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+    <a class="navbar-brand" href="#"><img src="img/华为.png" alt="" width="50px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">首页<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    学科学习
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Web前端+全栈</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Python+人工智能</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">JavaEE+大数据</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">服务体系</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">软件工具</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">专题学习</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">就业指导</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!--<div class="container">-->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-sm-img="img/1.jpg" data-lg-img="img/2.jpg">
+
+            </div>
+            <div class="carousel-item" data-sm-img="img/4.jpg" data-lg-img="img/3.jpg">
+
+            </div>
+            <div class="carousel-item" data-sm-img="img/5.jpg" data-lg-img="img/6.jpg">
+
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    <!--</div>-->
+</div>
+
+<div class="text-center mt-5 mb-5">
+    <div><h2>热门课程</h2></div>
+    <img src="img/stars.svg" alt="" width="100px">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="media">
+            <img class="mr-3" src="img/头像.png" alt="Generic placeholder image" width="64px">
+            <div class="media-body">
+                <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="media">
+                <img class="mr-3" src="img/头像.png" alt="Generic placeholder image" width="64px">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+            <div class="media">
+                <img class="mr-3" src="img/头像.png" alt="Generic placeholder image" width="64px">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+            <div class="media">
+                <img class="mr-3" src="img/头像.png" alt="Generic placeholder image" width="64px">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+        </div>
+
+
+    <div class="col-md-6 col-lg-4">
+        <div class="media">
+            <img class="mr-3" src="img/头像.png" alt="Generic placeholder image" width="64px">
+            <div class="media-body">
+                <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+        <div class="media">
+            <img class="mr-3" src="img/头像.png" alt="Generic placeholder image" width="64px">
+            <div class="media-body">
+                <h5 class="mt-0">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">在线大学</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">会员专享</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">优质视频</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">线下沙龙</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">精品课程</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">撩课小册</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">面试宝典</a>
+    </li><li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">小撩阅读</a>
+</li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">小撩公益</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div>
+                        <img src="img/二维码.png" alt="" width="60%">
+                        <span class="text-muted">更多资讯欢迎</span><br>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="col-4 text-center d-none d-sm-none d-md-block"><img src="img/iphone11.png" alt="" width="100%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="container">
+        <div class="row">
+            <div class="col-4"><img src="img/iphone11.png" alt="" width="400px"></div>
+            <div class="col-8">
+                <div class="text-center">
+                <img src="img/二维码.png" alt="">
+                <span class="text-muted">更多资讯欢迎</span><br>
+            </div>
+                <div>
+
+                </div></div>
+        </div>
+    </div></div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div>
+                    <img src="img/二维码.png" alt="">
+                    <span class="text-muted">更多资讯欢迎</span><br>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="col-4 text-center"><img src="img/iphone11.png" alt="" width="400px"></div>
+        </div>
+    </div></div>
+</div>
+
+<div class="text-center mt-5 mb-5">
+    <div><h2>关于我们</h2></div>
+    <img src="img/stars.svg" alt="" width="100px">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 order-2 order-lg-1">
+            <p>仅花费话费古额ui基地和国家发动护国v和计划的设计风格互动环节计划的饭局环境而定火箭黄蜂尝试过减少对环季后赛的法国v但是价格鳄科孤独感黑会给和</p>
+            <br><br>
+            <p>仅花费话费古额ui基地和国家发动护国v和计划的设计风格互动环节计划的饭局环境而定火箭黄蜂尝试过减少对环季后赛的法国v但是价格鳄科孤独感黑会给和</p>
+            <br><br>
+            <p>仅花费话费古额ui基地和国家发动护国v和计划的设计风格互动环节计划的饭局环境而定火箭黄蜂尝试过减少对环季后赛的法国v但是价格鳄科孤独感黑会给和</p>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 text-center"><img class="img-fluid img-thumbnail" src="img/iphone11.png" alt="" width="100%"></div>
+    </div>
+</div>
+<footer>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 d-none d-md-none d-lg-block clearfix">
+            <ul>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">课程介绍</a></li>
+                <li><a href="">热门课程</a></li>
+            </ul>
+            <ul>
+                <li><a href="">名师授课</a></li>
+                <li><a href="">课堂互动</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-light">
+            <p>公司地址：上海市景荣大厦</p>
+            <p>联系电话：666666</p>
+            <p>地址邮箱：1043763638@qq.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6 d-none d-sm-none d-md-block d-lg-block text-light">联系我们：</div>
+    </div>
+</div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+    $(window).on('resize',function () {
+        let clientW=$(window).width();
+        let isShowBigImage=clientW>=900;
+        let carouselItem=$('#carouselExampleIndicators .carousel-item');
+
+        carouselItem.each(function (index,items) {
+            let src=isShowBigImage?$(items).data('lg-img'):$(items).data('sm-img');
+            console.log(src);
+            let largeImg=`url(${src})`;
+            $(items).css({
+                backgroundImage:largeImg,
+            });
+            // console.log();
+            if(!isShowBigImage){
+               let smallImg=`<img src="${src}">`;
+               $(items).empty().append(smallImg);
+            }else {
+                $(items).empty();
+            }
+        })
+
+    }).trigger('resize');
+</script>
+</body>
+</html>
